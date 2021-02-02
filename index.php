@@ -8,6 +8,16 @@
     <title>Roman Demchenko - Full Stack Developer</title>
 </head>
 <body>
-
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="header">
+                    <a href="/" class="header__logo">Roman Demchenko</a>
+                    <div class="header__about">About</div>
+                </div>
+            </div>
+        </header>
+        <footer></footer>
+    </div>
 </body>
 </html>
