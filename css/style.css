@@ -78,3 +78,75 @@ table {
     object-fit: cover;
     object-position: center;
 }
+
+.grid_inner {
+    position: relative;
+}
+
+.grid_inner__text {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    text-align: center;
+    line-height: normal;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+.grid_inner__text h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.grid_inner__text a {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    background-image: linear-gradient(
+            45deg
+            , #6ab1d7 0%, #33d9de 50%, #002878 100%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: white;
+    border-radius: 30px;
+    padding: 12px 40px;
+    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    box-shadow: 0 16px 32px 0 rgb(0 40 120 / 35%);
+    transition: .5s;
+}
+
+.grid_inner__text a:hover {
+    box-shadow: 0 0px 0px 0 rgb(0 40 120 / 0%);
+    background-position: 0 0;
+}
+
+.grid_inner:hover .grid_inner__text {
+    top: 0;
+    opacity: 1;
+    transition: 0.3s linear;
+}
+
+.grid_inner:hover img {
+    filter: blur(4px);
+    transition: 0.3s linear;
+    opacity: 0.5;
+}
+
+.grid_inner img {
+    transition: 0.3s linear;
+}
+
+.grid_inner__text {
+}

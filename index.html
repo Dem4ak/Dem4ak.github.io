@@ -18,8 +18,11 @@
             <div class="grid-item">
                 <div class="grid_inner">
                     <img src="./img/works/academy-vinilam.jpg" alt="">
+                    <div class="grid_inner__blur"></div>
                     <div class="grid_inner__text">
-                        <h2></h2>
+                        <h2>Тут надо придумать текст заголовока</h2>
+                        <p>Сюда мы напишем текст описания, а пока будет Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, excepturi expedita, laboriosam nisi pariatur quis quod rem rerum sed tenetur unde vel! Ad blanditiis dolor doloribus expedita nulla officia voluptatem.</p>
+                        <a href="#" target="_blank">Красивая кнопка</a>
                     </div>
                 </div>
             </div>
@@ -33,18 +36,20 @@
         </div>
     </div>
     <script>
-        var elem = document.querySelector('.grid');
-        var msnry = new Masonry( elem, {
-            // options
-            itemSelector: '.grid-item',
-            columnWidth: 200
-        });
+        setTimeout(function () {
+            var elem = document.querySelector('.grid');
+            var msnry = new Masonry( elem, {
+                // options
+                itemSelector: '.grid-item',
+                columnWidth: 200
+            });
 
-        // element argument can be a selector string
-        //   for an individual element
-        var msnry = new Masonry( '.grid', {
-            // options
-        });
+            // element argument can be a selector string
+            //   for an individual element
+            var msnry = new Masonry( '.grid', {
+                // options
+            });
+        }, 2000);
     </script>
 </body>
 </html>
