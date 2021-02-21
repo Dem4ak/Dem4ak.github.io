@@ -14,7 +14,7 @@
 <body>
     <div class="wrapper">
         <div class="container">
-        <div class="grid" data-masonry='{ "itemSelector": ".grid-item" }'>
+        <div class="grid">
             <div class="grid-item">
                 <div class="grid_inner">
                     <img src="./img/works/academy-vinilam.jpg" alt="">
@@ -32,5 +32,19 @@
         </div>
         </div>
     </div>
+    <script>
+        var elem = document.querySelector('.grid');
+        var msnry = new Masonry( elem, {
+            // options
+            itemSelector: '.grid-item',
+            columnWidth: 200
+        });
+
+        // element argument can be a selector string
+        //   for an individual element
+        var msnry = new Masonry( '.grid', {
+            // options
+        });
+    </script>
 </body>
 </html>
