@@ -43,21 +43,38 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
+*{
+    box-sizing: border-box;
 }
-.grid-item { width: 300px; }
+.container{
+    padding: 0 15px;
+}
+.grid-item { width: 33.33%; }
 
 .grid-item img {
     width: 100%;
 }
 
 .grid-item {
-    padding: 5px;
+    padding: 10px;
 }
 
 .grid-item img {
     border-radius: 5px;
     box-shadow: 0 0 10px 1px rgba(211, 233, 211, .35);
+}
+
+.grid_inner{
+    padding: 0;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px #dedede;
+    width: 100%;
+    overflow: hidden;
+}
+
+.grid_inner img {
+    height: auto;
+    object-fit: cover;
+    object-position: center;
 }
